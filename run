@@ -1,0 +1,1 @@
+docker run -d -i -t -name {name} -h {ip} -p {port}:25565 -p {port_r}:25576 -v /var/ftp/{folder}:/data vertipl/docker_mc -Xmx1024M -Xms1024M -- nogui
