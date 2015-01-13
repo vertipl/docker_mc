@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cp /usr/local/etc/minecraft/craftbukkit.jar /data/
+cp /usr/local/etc/minecraft/craftbukkit-1.7.2-R0.3.jar /data/
 
 if [ ! -f /data/opts.txt ]
 then
@@ -17,6 +17,6 @@ then
     cp /usr/local/etc/minecraft/server.properties /data/
 fi
 
-# Run supervisor which maintains the mumble server
+# supervisor 
 /usr/bin/supervisord
 
