@@ -12,7 +12,7 @@ ADD    ./supervisor/conf.d/minecraft.conf /etc/supervisor/conf.d/minecraft.conf
 ADD    ./minecraft/ops.txt /usr/local/etc/minecraft/
 ADD    ./minecraft/white-list.txt /usr/local/etc/minecraft/
 ADD    ./minecraft/server.properties /usr/local/etc/minecraft/
-ADD    ./minecraft/craftbukkit.jar /usr/local/etc/minecraft/
+ADD    ./minecraft/craftbukkit-1.7.2-R0.3.jar /usr/local/etc/minecraft/
 ADD    ./scripts/start /start
 
 RUN	   chmod +x /start
