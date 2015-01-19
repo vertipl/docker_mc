@@ -19,5 +19,5 @@ RUN	   chmod +x /start
 
 expose 25565
 volume ["/data"]
-cmd    ["/script"]
+cmd    ["/start"]
 
