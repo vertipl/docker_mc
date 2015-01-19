@@ -19,5 +19,5 @@ RUN	   chmod +x /start
 
 expose 25565
 volume ["/data"]
-cmd    ["cd /data/ & java -Xmx2G -jar craftbukkit-1.7.2-R0.3.jar"]
+cmd    ["/script"]
 
