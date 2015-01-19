@@ -1,16 +1,7 @@
 #!/bin/bash
 
 cp /usr/local/etc/minecraft/craftbukkit-1.7.2-R0.3.jar /data/
-
-if [ ! -f /data/opts.txt ]
-then
-    cp /usr/local/etc/minecraft/opts.txt /data/
-fi
-
-if [ ! -f /data/white-list.txt ]
-then
-    cp /usr/local/etc/minecraft/white-list.txt /data/
-fi
+chmod -x craftbukkit-1.7.2-R0.3.jar
 
 if [ ! -f /data/server.properties ]
 then
