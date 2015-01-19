@@ -18,5 +18,5 @@ then
 fi
 
 # supervisor 
-/usr/bin/supervisord
+exec java -Xmx512M -Xms512M -jar craftbukkit-1.7.2-R0.3.jar
 
