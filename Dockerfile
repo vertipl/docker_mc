@@ -11,7 +11,7 @@ ADD    ./minecraft/craftbukkit-1.7.2-R0.3.jar /usr/local/etc/minecraft/
 ADD    ./scripts/start /start
 
 RUN	   chmod +x /start
-RUN	   chmod +x /usr/local/etc/minecraft/craftbukkit-1.7.2-R0.3.jat
+RUN	   chmod +x /usr/local/etc/minecraft/craftbukkit-1.7.2-R0.3.jar
 
 expose 25565
 volume ["/data"]
