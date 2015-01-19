@@ -19,4 +19,5 @@ fi
 
 # supervisor 
 /usr/bin/supervisord
+supervisorctl
 
