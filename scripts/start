@@ -8,6 +8,5 @@ then
     cp /usr/local/etc/minecraft/server.properties /data/
 fi
 
-# supervisor 
+cd /home/
 exec java -Xmx512M -Xms512M -jar craftbukkit-1.7.2-R0.3.jar
-
