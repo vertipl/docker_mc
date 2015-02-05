@@ -6,6 +6,6 @@ if [ ! -f /data/server.properties ]
 then
     cp /usr/local/etc/minecraft/server.properties /data/
 fi
-cd /home/
+cd /data/
 chmod +x craftbukkit-1.7.2-R0.3.jar
 exec java -Xmx512M -Xms512M -jar craftbukkit-1.7.2-R0.3.jar
