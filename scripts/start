@@ -8,4 +8,4 @@ then
 fi
 cd /data/
 chmod +x craftbukkit-1.7.2-R0.3.jar
-exec java -Xmx512M -Xms512M -jar craftbukkit-1.7.2-R0.3.jar
+java -Xmx512M -Xms512M -jar craftbukkit-1.7.2-R0.3.jar
