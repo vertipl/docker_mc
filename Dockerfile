@@ -9,13 +9,13 @@ RUN    echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-se
        echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections  && \
        apt-get --yes install curl oracle-java8-installer
 
-ADD    ./minecraft/server.properties /usr/local/etc/minecraft/
-ADD    ./minecraft/craftbukkit-1.7.2-R0.3.jar /usr/local/etc/minecraft/
+ADD    ./minecraft/server.properties /data/
+ADD    ./minecraft/craftbukkit-1.7.2-R0.3.jar /data/
 ADD    ./scripts/start /start
 
-RUN	   chmod +x /start
-RUN	   chmod +x /usr/local/etc/minecraft/craftbukkit-1.7.2-R0.3.jar
-
+RUN     chmod +x /start
+RUN     chmod +x /data/craftbukkit-1.7.2-R0.3.jar
+RUN
 expose 25565
 volume ["/data"]
 cmd    ["/start"]
