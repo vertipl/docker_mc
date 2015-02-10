@@ -1,11 +1,2 @@
 #!/bin/bash
-
-cp /usr/local/etc/minecraft/craftbukkit-1.7.2-R0.3.jar /data/
-
-if [ ! -f /data/server.properties ]
-then
-    cp /usr/local/etc/minecraft/server.properties /data/
-fi
-cd /data/
-chmod +x craftbukkit-1.7.2-R0.3.jar
 java -Xmx512M -Xms512M -jar craftbukkit-1.7.2-R0.3.jar
