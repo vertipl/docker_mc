@@ -4,7 +4,7 @@ if [ ! -f /data/spigot.jar ]; then
   cp /spigot.jar /data/spigot.jar
   cp /ops.txt /data/ops.txt
   cp /white-list.txt /data/white-list.txt
-  cp /server.properies /data/server.properies
+  cp /server.properties /data/server.properties
 
   #accept eola
   echo "eula=true" > /data/eula.txt
