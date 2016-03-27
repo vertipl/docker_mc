@@ -1,6 +1,7 @@
 #!/bin/bash
 
 if [ ! -f /data/spigot.jar ]; then 
+  chown -R 6001:6001 ../
   cp /spigot.jar /data/spigot.jar
   cp /ops.txt /data/ops.txt
   cp /white-list.txt /data/white-list.txt
